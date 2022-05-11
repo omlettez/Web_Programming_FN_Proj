@@ -37,7 +37,6 @@ ul li{
 ul li a{
     text-decoration: none;
     color:white;
-
 }
 ::placeholder{
     color: #FF4B4B;
@@ -124,6 +123,12 @@ h1{
     position: fixed;
     z-index: 150;
   }
+.homebtn {
+    text-decoration: none;
+}
+a.homebtn:hover, a.homebtn:active {
+    color: red;
+}
 /****************/
 /* header-ends */
 .Ads{
