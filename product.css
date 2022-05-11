@@ -1,0 +1,126 @@
+.pd{
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -50px;
+}
+.pdName{
+    position: relative;
+    color: #FF4B4B;
+    margin-top: 200px;
+    margin-left: 200px;
+    font-size: 36px;
+    font-weight: bold;
+}
+.pdBorder{
+    border-radius: 30px;
+    background-color: #FEE0D2;
+    width: 420px;
+    height: 530px;
+    position: relative;
+    margin: 20px 0 30px 200px;
+}
+.pdBorder img{
+    width: 100%;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 530px;
+}
+.rightText{
+    margin-right: 450px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #FF4B4B;
+}
+.rightText p{
+    margin-left: 30px;
+}
+.priceText{
+    color: #875EFF;
+    font-weight: bold;
+    font-size: 40px;
+
+}
+.amount{
+    background-color: #FEE0D2;
+    width: 250px;
+    height: 40px;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+}
+.amount p{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FF4B4B;
+    font-weight: bold;
+    font-size: 24px;
+}
+.amountbtn{
+    border: none;
+    border-radius: 30px;
+    background: #FEE0D2;
+    color: #FF4B4B;
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.rdesc{
+    display: flex;
+    flex-direction: column;
+
+}
+.amtbtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -150px;
+}
+
+
+.bottombtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.pinkbtn{
+    background-color: #FF4B4B;
+    border-radius: 40px;
+    border: none;
+    margin: 10px;
+    padding: 1rem;
+    color: #FEFBE5;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    width: 1000px;
+    cursor: pointer;
+}
+.favbtn{
+    background-color: #FF4B4B;
+    border-radius: 40px;
+    border: none;
+    margin: 10px;
+    text-indent: -160px;
+    font-size: 24px;
+    color: #FEFBE5;
+    width: 200px;
+    position: relative;
+    cursor: pointer;
+}
+.favbtn div{
+   margin-top:10px;
+}
