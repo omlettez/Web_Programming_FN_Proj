@@ -48,27 +48,29 @@
 
 }
 .amount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.amountBox{
+    border: none;
+    outline: none;
+
     background-color: #FEE0D2;
+    color: #FF4B4B;
+
     width: 250px;
     height: 40px;
     border-radius: 30px;
+
     text-align: center;
-    position: relative;
-}
-.amount p{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #FF4B4B;
+    font-size: 20px;
     font-weight: bold;
-    font-size: 24px;
 }
 .amountbtn{
     border: none;
     border-radius: 30px;
-    background: #FEE0D2;
+    background: #FFFFFF;
     color: #FF4B4B;
     width: 60px;
     height: 60px;
@@ -77,10 +79,16 @@
     margin-left: 20px;
     margin-right: 20px;
     cursor: pointer;
+    transition: 1s
+}
+.amountbtn:hover{
+    background-color: #FF4B4B;
+    color: white;
 }
 .rdesc{
     display: flex;
     flex-direction: column;
+    margin-top: 35%;
 
 }
 .amtbtn{

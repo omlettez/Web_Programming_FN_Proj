@@ -41,9 +41,7 @@ ul li a{
 ::placeholder{
     color: #FF4B4B;
     font-size: large;
-    position:relative;
-    top: 2px;
-    left:15px;
+    
 }
 .header{
     border: 1px solid #FF4B4B;
@@ -61,7 +59,7 @@ ul li a{
 .fa-regular{
     color:white;
 }
-.fa-heart{
+.heart{
     position:absolute;
     left: 90%;
     top:30%;
@@ -125,9 +123,6 @@ h1{
   }
 .homebtn {
     text-decoration: none;
-}
-a.homebtn:hover, a.homebtn:active {
-    color: red;
 }
 /****************/
 /* header-ends */
@@ -345,4 +340,4 @@ figure:hover, figure:active{
 }
 .price{
     margin-right: 10px;
-}
+}/**************************************/
