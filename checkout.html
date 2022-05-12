@@ -43,8 +43,37 @@
             </div>
             <div class="right">
                 <p>Payment Method</p>
+                <form class="payMeth" action="">
+                    <label class="container">Mobile Banking
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Cash on delivery
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Credit/Debit card
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Bank transfer
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </form>
+            </div>
+        </div>
+        <div class="horizon">
+            <div class="promo">
+                <p>Promotional Code</p>
+                <input type="text" id="promoCode" name="promocode" placeholder="Enter the code">
+                <input type="submit" id="okBtn" value="OK">
+            </div>
+            <div>
+                <button type="submit" id="checkout">Checkout</button>
             </div>
         </div>
     </div>
 </body>
-</html> 
+
+</html>
