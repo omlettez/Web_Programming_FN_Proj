@@ -1,0 +1,23 @@
+.vert{
+    display: flex;
+    flex-direction: column;
+
+    margin: 150px 0px 20px 100px;
+
+}
+.horiz{
+    display: flex;
+    flex-direction: row;
+}
+.left, .right{
+    font-size: 32px;
+    font-weight: bolder;
+    color: #FF4B4B;
+    width: 50%;
+}
+.right{
+    right: 0;
+}
+.val{
+    color: #875EFF;
+}
