@@ -120,6 +120,12 @@ img{
     align-items: center;
     justify-content: center;
 }
+.btnrow button{
+    transition: 0.2s;
+}
+.btnrow button:hover{
+    background-color: #a82f2f;
+}
 .fa-trash{
     color: #FF4B4B;
 }

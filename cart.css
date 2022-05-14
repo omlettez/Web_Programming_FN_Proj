@@ -132,6 +132,10 @@ img{
     justify-content: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
+
+}
+.pinkbtn:hover{
+    background-color: #b93434;
 }
 .pinkbtn{
     background-color: #FF4B4B;
@@ -145,4 +149,6 @@ img{
     position: relative;
     width: 1000px;
     cursor: pointer;
+    
+    transition: 0.2s;
 }

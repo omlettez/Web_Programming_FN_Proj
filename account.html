@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Checkout Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='account.css'>
+    <script src="https://kit.fontawesome.com/fed66b6b71.js" crossorigin="anonymous"></script>
+    <script src='main.js'></script>
+    <script src='account.js'></script>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="account-bar">
+            <div>
+                <a href="account.html">My Account</a></i>
+                <a href="index.html">Logout</a></i>
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="icon">
+                <a href="wishlist.html"><i class="fa-solid fa-heart fa-2xl heart"></i></a>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-2xl"></i></a>
+            </div>
+            <i class="fa-solid fa-bag-shopping fa-2xl"></i>
+            <a href="index.html" class="homebtn">
+                <h1>Pummart</h1>
+            </a>
+            <div class="sbox">
+                <input type="text" id="searchbox" name="searchbox" placeholder="Search">
+                <button type="submit" id="searchbtn"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="split">
+        <div class="menu">
+            <div id="browsePic">
+                <div id="displayPic"></div>
+                <form action="/profilepic" method="post" id="formId" enctype="multipart/form-data">
+                    <input type="file" id="fileField" name="avatar" value="fileToUpload" placeholder="" hidden>
+                </form>
+            </div>
+            <h2 id="username">Jihyo</h2>
+            <menu>
+                <button class="menubtn" onclick="myProfile()">Profile</button>
+                <button class="menubtn" onclick="myBankandcards()">Bank & Cards</button>
+                <button class="menubtn" onclick="myAddress()">Addresses</button>
+                <button class="menubtn" onclick="myPass()">Change Password</button>
+                <button class="menubtn" onclick="myDeli()">Delivery Status</button>
+                <button class="menubtn" onclick="myDis()">My Discounts</button>
+            </menu>
+        </div>
+        <div class="overlay">
+            <div id="profile">
+                <div class="profile">
+                    <h2>Profile</h2>
+                </div>
+                <hr>
+                <form id="myForm">
+                    <table class="myTable">
+                        <tr>
+                            <td>Username :</td>
+                            <td><input type="text" class="textind Form"></td>
+                        </tr>
+                        <tr>
+                            <td>Fullname :</td>
+                            <td><input type="text" class="textind Form"></td>
+                        </tr>
+                        <tr>
+                            <td>Phone :</td>
+                            <td><input type="tel" class="textind Form"></td>
+                        </tr>
+                        <tr>
+                            <td>Email :</td>
+                            <td><input type="email" class="textind Form"></td>
+                        </tr>
+                        <tr>
+                            <td>Gender :</td>
+                            <td class="gend">
+                                <label class="container">Male
+                                    <input type="radio" name="Gender">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">Female
+                                    <input type="radio" name="Gender">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">Other
+                                    <input type="radio" name="Gender">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Date of Birth :</td>
+                            <td><input type="date" class="Form"></td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="Submit" class="submitbtn">
+                </form>
+            </div>
+            <div id="b&c">
+                <div class="profile">
+                    <h2>Bank & Cards</h2>
+                </div>
+                <hr>
+                <div class="h-3">
+                    <h3>Credit/Debit cards</h3>
+                    <button type="button" class="addCard">Add</button>
+                </div>
+                <div class="list">
+                    <div class="card">
+                        <div>Master card</div>
+                        <div>**** **** **** 6789</div>
+                        <div class="deldefbtn">
+                            <button type="button" class="delCard">Delete</button>
+                            <button type="button" class="defbtn">Set as default</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>Master card</div>
+                        <div>**** **** **** 6789</div>
+                        <div class="deldefbtn">
+                            <button type="button" class="delCard">Delete</button>
+                            <button type="button" class="defbtn">Set as default</button>
+                        </div>
+                    </div>
+                </div>
+                <hr class="smallhr">
+                <div class="h-3">
+                    <h3>Bank accounts</h3>
+                    <button type="button" class="addCard">Add</button>
+                </div>
+                <div class="list">
+                    <div class="card">
+                        <div><img src="img/kbank.png" alt=""></div>
+                        <div class="bankname">
+                            <p>KBANK</p>
+                            <p>Tat Setsantipong</p>
+                        </div>
+                        <div>* 1234</div>
+                        <div class="deldefbtn">
+                            <button type="button" class="delCard">Delete</button>
+                            <button type="button" class="defbtn">Set as default</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div><img src="img/kbank.png" alt=""></div>
+                        <div class="bankname">
+                            <p>KBANK</p>
+                            <p>Tat Setsantipong</p>
+                        </div>
+                        <div>* 1234</div>
+                        <div class="deldefbtn">
+                            <button type="button" class="delCard">Delete</button>
+                            <button type="button" class="defbtn">Set as default</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="address">
+                <div class="profile">
+                    <h2>My Address</h2>
+                    <button type="button" class="addBtn">+Add Address</button>
+                </div>
+                <hr>
+                <div class="addressMenu">
+                    <form id="myForm">
+                        <table class="myTable">
+                            <tr>
+                                <td>Full name :</td>
+                                <td><input type="text" class="textind Form" maxlength="30"></td>
+                            </tr>
+                            <tr>
+                                <td>Phone :</td>
+                                <td><input type="tel" class="textind Form" maxlength="16"></td>
+                            </tr>
+                            <tr>
+                                <td>Address :</td>
+                                <td><textarea class=" addrForm Form" maxlength="100"></textarea></td>
+                            </tr>
+                        </table>
+                        <input type="submit" value="Submit" class="submitbtn">
+                    </form>
+                </div>
+            </div>
+            <div id="pw">
+                <div class="profile">
+                    <h2>Change Password</h2>
+                </div>
+                <hr>
+                <div class="addressMenu">
+                    <form id="myForm">
+                        <table class="myTable">
+                            <tr>
+                                <td>Current password :</td>
+                                <td><input type="password" class="textind Form" minlength="8" maxlength="20"></td>
+                            </tr>
+                            <tr>
+                                <td>New password :</td>
+                                <td><input type="password" class="textind Form" minlength="8" maxlength="20"></td>
+                            </tr>
+                            <tr>
+                                <td>Confirm password :</td>
+                                <td><input type="password" class="textind Form" minlength="8" maxlength="20"></td>
+                            </tr>
+
+                        </table>
+                        <input type="submit" value="Submit" class="submitbtn">
+                    </form>
+                </div>
+
+            </div>
+            <div id="deli">
+                <div class="profile">
+                    <h2>Delivery Status</h2>
+                </div>
+                <hr>
+                <div class="deliBox">
+                    <div class="delistatus">
+                        <div class="delivert">
+                            <h3 id="orderId">ORDER: 2MAQ0949RH</h3>
+                            <div class="delihori">
+                                <p id="delistat">Status: Delivering</p>
+                                <p id="delitotal">Order Total: 429.-</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delistatus">
+                        <div class="delivert">
+                            <h3 id="orderId">ORDER: H8G32E548CZ332</h3>
+                            <div class="delihori">
+                                <p id="delistat">Status: Delivering</p>
+                                <p id="delitotal">Order Total: 429.-</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delistatus">
+                        <div class="delivert">
+                            <h3 id="orderId">ORDER: RZ4PZ0QTFH</h3>
+                            <div class="delihori">
+                                <p id="delistat">Status: Delivering</p>
+                                <p id="delitotal">Order Total: 9.-</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delistatus">
+                        <div class="delivert">
+                            <h3 id="orderId">ORDER: 90JXZYSVEW</h3>
+                            <div class="delihori">
+                                <p id="delistat">Status: Preparing</p>
+                                <p id="delitotal">Order Total: 900.-</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delistatus">
+                        <div class="delivert">
+                            <h3 id="orderId">ORDER: 0WR0WSDDOI</h3>
+                            <div class="delihori">
+                                <p id="delistat">Status: Preparing</p>
+                                <p id="delitotal">Order Total: 1400.-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="dis">
+                <div class="profile">
+                    <h2>My Discounts</h2>
+                </div>
+                <hr>
+                <div class="myDiscounts">
+                    <div class="disBox">
+                        <img src="img/dis.png" alt="">
+                        <div class="disDetails">
+                            <h3 id="amount">25% Discount</h3>
+                            <p id="maxDis">Max Discount : 100 THB</p>
+                            <p id="minSpend">Minimum spend : 300THB</p>
+                        </div>
+                    </div>
+                    <div class="disBox">
+                        <img src="img/dis.png" alt="">
+                        <div class="disDetails">
+                            <h3 id="amount">5% Discount</h3>
+                            <p id="exp">Expired date: 10 Dec 2022</p>
+                        </div>
+                    </div>
+                    <div class="disBox">
+                        <img src="img/dis.png" alt="">
+                        <div class="disDetails">
+                            <h3 id="amount">20% Discount</h3>
+                            <p id="maxDis">Max Discount : 30 THB</p>
+                            <p id="minSpend">Minimum spend : 0THB</p>
+                        </div>
+                    </div>
+                    <div class="disBox">
+                        <img src="img/dis.png" alt="">
+                        <div class="disDetails">
+                            <h3 id="amount">100THB Discount</h3>
+                            <p id="minSpend">Minimum spend : 200 THB</p>
+                            <p id="exp">Expired Date : 10 Dec 2022</p>
+                        </div>
+                    </div>
+                    <div class="disBox">
+                        <img src="img/dis.png" alt="">
+                        <div class="disDetails">
+                            <h3 id="amount">100THB Discount</h3>
+                            <p id="minSpend">Minimum spend : 200 THB</p>
+                            <p id="exp">Expired Date : 10 Dec 2022</p>
+                        </div>
+                    </div>
+                    <div class="disBox">
+                        <img src="img/dis.png" alt="">
+                        <div class="disDetails">
+                            <h3 id="amount">100THB Discount</h3>
+                            <p id="minSpend">Minimum spend : 200 THB</p>
+                            <p id="exp">Expired Date : 10 Dec 2022</p>
+                        </div>
+                    </div>
+                    <div class="disBox">
+                        <img src="img/dis.png" alt="">
+                        <div class="disDetails">
+                            <h3 id="amount">100THB Discount</h3>
+                            <p id="minSpend">Minimum spend : 200 THB</p>
+                            <p id="exp">Expired Date : 10 Dec 2022</p>
+                        </div>
+                    </div>
+                    <div class="disBox">
+                        <img src="img/dis.png" alt="">
+                        <div class="disDetails">
+                            <h3 id="amount">100THB Discount</h3>
+                            <p id="minSpend">Minimum spend : 200 THB</p>
+                            <p id="exp">Expired Date : 10 Dec 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
