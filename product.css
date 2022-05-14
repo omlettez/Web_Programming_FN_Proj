@@ -79,7 +79,7 @@
     margin-left: 20px;
     margin-right: 20px;
     cursor: pointer;
-    transition: 1s
+    transition: 0.2s
 }
 .amountbtn:hover{
     background-color: #FF4B4B;
@@ -116,6 +116,11 @@
     position: relative;
     width: 1000px;
     cursor: pointer;
+
+    transition: 0.2s;
+}
+.pinkbtn:hover{
+    background-color: #b93434;
 }
 .favbtn{
     background-color: #FF4B4B;
@@ -127,6 +132,11 @@
     width: 200px;
     position: relative;
     cursor: pointer;
+    
+    transition: 0.2s;
+}
+.favbtn:hover{
+    background-color: #b93434;
 }
 .favbtn div{
    margin-top:10px;
