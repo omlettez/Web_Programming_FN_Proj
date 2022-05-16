@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Product's Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='product.css'>
+    <script src="https://kit.fontawesome.com/fed66b6b71.js" crossorigin="anonymous"></script>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="account-bar">
+            <div>
+                <a href="">Login</a> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <a href="">Register</a> <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="icon">
+                <a href="wishlist.html"><i class="fa-solid fa-heart fa-2xl heart"></i></a>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-2xl"></i></a>
+            </div>
+            <i class="fa-solid fa-bag-shopping fa-2xl"></i>
+            <a href="index.html" class="homebtn">
+                <h1>Pummart</h1>
+            </a>
+            <div class="sbox">
+                <input type="text" id="searchbox" name="searchbox" placeholder="Search">
+                <button type="submit" class="searchbtn"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="pd">
+        <div>
+            <p class="pdName">เนื้อหมูอนามัย เบทาโกร</p>
+            <div class="pdBorder">
+                <div class="image">
+                    <img src="img/meat1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="rightElem">
+            <div class="rdesc">
+                <div>
+                    <div class="rightText">Amount</div>
+                </div>
+                <div class="amtbtn">
+                    <button type="button" class="amountbtn">-</button>
+                    <div class="amount">
+                        <input type="text" class="amountBox" name="searchbox" placeholder="Enter amount">
+                    </div>
+                    <button type="button" class="amountbtn">+</button>
+                </div>
+                <div>
+                    <div class="rightText">
+                        <p>Price</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="priceText">1050 THB</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottombtn">
+        <button type="button" class="pinkbtn">Add to cart</button>
+        <button type="button" class="favbtn">
+            <div class="fa-solid fa-heart fa-2xl"></div>
+        </button>
+    </div>
+</body>
+
+</html>

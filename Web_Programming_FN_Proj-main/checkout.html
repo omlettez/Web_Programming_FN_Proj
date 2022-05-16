@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Checkout Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='checkout.css'>
+    <script src="https://kit.fontawesome.com/fed66b6b71.js" crossorigin="anonymous"></script>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="account-bar">
+            <div>
+                <a href="">Login</a> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <a href="">Register</a> <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="icon">
+                <a href="wishlist.html"><i class="fa-solid fa-heart fa-2xl heart"></i></a>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-2xl"></i></a>
+            </div>
+            <i class="fa-solid fa-bag-shopping fa-2xl"></i>
+            <a href="index.html" class="homebtn">
+                <h1>Pummart</h1>
+            </a>
+            <div class="sbox">
+                <input type="text" id="searchbox" name="searchbox" placeholder="Search">
+                <button type="submit" class="searchbtn"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="vert">
+        <div class="horiz">
+            <div class="left">
+                <p>CHECKOUT PAGE</p>
+                <p>Total Price: <span class="val">999.-</span></p>
+                <p>Discounted Price: <span class="val">900.-</span></p>
+            </div>
+            <div class="right">
+                <p>Payment Method</p>
+                <form class="payMeth" action="">
+                    <label class="container">Mobile Banking
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Cash on delivery
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Credit/Debit card
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Bank transfer
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </form>
+            </div>
+        </div>
+        <div class="horizon">
+            <div class="promo">
+                <p>Promotional Code</p>
+                <input type="text" id="promoCode" name="promocode" placeholder="Enter the code">
+                <input type="submit" id="okBtn" value="OK">
+            </div>
+            <div>
+                <button type="submit" id="checkout">Checkout</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
