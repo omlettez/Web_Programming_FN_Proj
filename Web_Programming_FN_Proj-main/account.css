@@ -157,7 +157,7 @@ hr {
     border: none;
     border-radius: 15px;
     outline: none;
-    color: #2196F3;
+    color: #875DFF;
     font-size: 20px;
     padding: 5px;
     margin-bottom: 10px;
@@ -318,7 +318,7 @@ h3 {
     -ms-user-select: none;
     user-select: none;
 
-    color: #2196F3;
+    color: #875DFF;
 }
 
 /* Hide the browser's default radio button */
@@ -346,7 +346,7 @@ h3 {
 
 /* When the radio button is checked, add a blue background */
 .container input:checked~.checkmark {
-    background-color: #2196F3;
+    background-color: #875DFF;
 }
 
 /**************custom radio**************/
@@ -391,7 +391,7 @@ h3 {
     justify-content: space-between;
 }
 .addressMenu p {
-    color: #2196F3;
+    color: #875DFF;
     font-weight: bold;
 }
 .addrForm{

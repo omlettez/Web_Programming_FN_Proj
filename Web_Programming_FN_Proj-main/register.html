@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pummart</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='register.css'>
+    <script src="https://kit.fontawesome.com/fed66b6b71.js" crossorigin="anonymous"></script>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="account-bar">
+            <div>
+                <a href="login.html">Login</a></i>
+                <a href="register.html">Register</a></i>
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="icon">
+                <a href="wishlist.html"><i class="fa-solid fa-heart fa-2xl heart"></i></a>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-2xl"></i></a>
+            </div>
+            <i class="fa-solid fa-bag-shopping fa-2xl"></i>
+            <a href="index.html" class="homebtn">
+                <h1>Pummart</h1>
+            </a>
+            <div class="sbox">
+                <input type="text" id="searchbox" name="searchbox" placeholder="Search">
+                <button type="submit" class="searchbtn"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+            </div>
+        </div>
+    </div>
+ <div class="regismain">
+    <div class="center">REGISTER </div> <br>
+    <div class="Subject">Name <br>
+        <input type="text" name="firstname" id="firstname" placeholder="Enter First Name" required><br><br>
+        Last name<br>
+        <input type="text" name="lastname" id="lastname" placeholder="Enter Last Name" required><br><br>
+        Email <br>
+        <input type="text" name="email" id="email" placeholder="Enter Email" required><br><br>
+        Password<br>
+        <input type="text" name="password" id="password" placeholder="Enter Password" required minlength="8" maxlength="20"><br><br>
+        Confirm password<br>
+        <input type="text" name="confirmPassword" id="confirmPassword" placeholder="Re-Enter Password" required minlength="8" maxlength="20"><br><br>
+    </div>
+    <div class="rules">
+        <p>The password must be at least 8 characters long. contain at least one number, one lowercase letter,
+        and oneuppercase letter.</p>
+        <p>Let us understand you more to deliver you the best experience. Check the box below and stay in tounch!</p>
+        <form action=acceptRule class="acptrule">
+            <input type="checkbox" id="rule" name="rule1">
+            <label for="rule1">Accept terms & condition about Pummart's websites.</label><br>
+            <input type="checkbox" id="rule" name="rule2">
+            <label for="rule2">I would like to recive my privillages, offers and updates from Pummart, Pummart and partners as specifiled in Privacy Policy.</label><br>
+            <br>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+          
+    </div>
+</div>
+</body>

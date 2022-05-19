@@ -30,6 +30,7 @@ body{
 .account-bar div{
     margin-left: auto;
     margin-right: 30px;
+    margin-top: 10px;
 }
 .account-bar div a{
     margin-right: 10px;
@@ -123,6 +124,11 @@ h1{
   }
 .homebtn {
     text-decoration: none;
+    width: fit-content;
+    display: inline-block;
+}
+.homebtn h1{
+    width: fit-content;
 }
 .sbox{
     position: relative;
@@ -135,7 +141,7 @@ h1{
 /* header-ends */
 .Ads{
     margin: 0;
-    margin-top: 80px;
+    margin-top: 120px;
     margin-bottom: -50px;
     padding: 0;
     height: 50vh;
@@ -292,6 +298,9 @@ figure:hover, figure:active{
     width: 970px;
     margin-top: 580px;
 }
+.product-list a{
+    color: black;
+}
 
 .border{
     width: 250px;
@@ -323,7 +332,7 @@ figure:hover, figure:active{
     bottom: -70px;
     left: 0;
     width: 100%;
-    text-indent: 1px;    
+    text-indent: 1px; 
 }
 .details-image{
     display: flex;
